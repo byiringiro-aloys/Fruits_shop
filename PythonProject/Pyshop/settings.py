@@ -80,7 +80,7 @@ DATABASES = {
 '''
 
 DATABASES = {
-'default' : dj_database_url.parse('postgresql://ngwino_user:IeNvvdG9aKa6ED9YKRWZDWavF28oAe4e@dpg-cvom3bbuibrs73btus1g-a.oregon-postgres.render.com/ngwino')
+'default' : dj_database_url.parse(os.environ.get('databaseUri'))
 }
 #
 # Password validation
